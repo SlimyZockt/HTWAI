@@ -21,6 +21,9 @@ spec:
         ports:
         - containerPort: 8080
           name: http
+        env:
+        - name: BACKEND_URL
+          value: "http://backend-api:3000"
         resources:
           requests:
             memory: "128Mi"

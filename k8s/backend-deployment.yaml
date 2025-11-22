@@ -28,6 +28,13 @@ spec:
               name: api-secrets
               key: openai-api-key
               optional: true
+        # AI_URL is optional - if not set, will use OpenAI API or local server based on API key
+        # - name: AI_URL
+        #   value: "http://custom-ai-server:1234/v1"
+        - name: AI_MODEL
+          value: "gpt-4o-mini"  # Default model
+        - name: PORT
+          value: "3000"
         resources:
           requests:
             memory: "128Mi"
