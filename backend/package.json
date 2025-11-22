@@ -1,0 +1,17 @@
+{
+  "name": "ai_api",
+  "private": true,
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "openai": "^6.9.1"
+  },
+  "scripts": {
+    "start": "bun run main.ts",
+    "dev": "bun --watch main.ts"
+  }
+}
